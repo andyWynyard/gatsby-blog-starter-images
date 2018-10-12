@@ -1,12 +1,21 @@
 .detail-card__home-link {
-  width: 100%;
-  float: left;
   text-decoration: none;
+  max-width: 500px;
+  margin: 0 auto;
+  color: blue;
+}
+
+.detail-card__home-link::before {
+  content: "<";
+}
+
+.detail-card__image {
+  margin-top: 10px;
 }
 
 .detail-card {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .detail-card__contact-button {
@@ -27,4 +36,28 @@
 .detail-card__summary-keyskills {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+
+.detail-card__keyskills--heading {
+  margin-bottom: 2px;
+}
+
+.detail-card__summary--heading {
+  margin-bottom: 2px;
+}
+
+.detail-card__summary--content,
+.detail-card__keyskills--content {
+  margin-bottom: 7px;
+}
+
+.detail-card__downloads {
+  text-decoration: none;
+  margin: 0 10px 10px 0;
+  color: blue;
+}
+
+.detail-card__horizontal-line {
+  margin-top: 20px;
 }
