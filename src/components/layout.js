@@ -23,7 +23,7 @@ export default ({ children }) => (
           font-family: "typeface-montserrat";
           margin: 0 auto;
           max-width: 900px;
-          padding: ${rhythm(2)};
+
           padding-top: ${rhythm(1.5)};
         `}
       >
