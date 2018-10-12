@@ -2,57 +2,45 @@ import React from "react";
 
 import { css } from "react-emotion";
 
-import "typeface-montserrat";
-
 export default props => (
   <div
     className={css`
       display: grid;
-      font-family: "typeface-montserrat";
     `}
   >
     <img
       src={props.img}
       alt={props.img}
       className={css`
-        font-family: "typeface-montserrat";
         width: 100%;
         border-radius: 4px;
-        box-shadow: 1px 1px 3px;
+        box-shadow: 1px 1px 3px #ddd;
       `}
     />
     <div>
       <h6
         className={css`
-          font-family: "typeface-montserrat";
-          color: #555;
           float: right;
+          margin-top: 4px;
         `}
       >
         {props.level}
       </h6>
-      <h4
-        className={css`
-          font-family: "typeface-montserrat";
-        `}
-      >
-        {props.name}
-      </h4>
+      <h3>{props.name}</h3>
       <h5
         className={css`
-          font-family: "typeface-montserrat";
           margin-bottom: 5px;
+          text-transform: uppercase;
         `}
       >
         Core Strengths
       </h5>
       <p
         className={css`
-          font-family: "typeface-montserrat";
-          font-size: 12px;
+          font-size: 10px;
         `}
       >
-        {props.strengths}
+        {props.strengths.map(item => item + ", ")}
       </p>
     </div>
   </div>

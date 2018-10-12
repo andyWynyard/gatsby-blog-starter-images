@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Maverick UX`
+    title: `Maverick UX`,
+    homepage: "https://maverickbysigma.se/",
+    people: "https://maverickbysigma.se/people/",
+    work: "https://maverickbysigma.se/work/"
   },
   plugins: [
     `gatsby-remark-copy-linked-files`,
