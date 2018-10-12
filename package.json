@@ -23,6 +23,7 @@
     "react-dom": "^16.5.1",
     "react-emotion": "^9.2.12",
     "react-typography": "^0.16.13",
+    "typeface-montserrat": "0.0.54",
     "typography": "^0.16.17",
     "typography-theme-kirkham": "^0.16.3"
   }

@@ -1,52 +1,47 @@
 import React from "react";
 import Layout from "../components/layout";
+import Card from "../components/card";
 import { graphql, Link } from "gatsby";
 import { css } from "react-emotion";
-import { rhythm } from "../utils/typography";
+import "typeface-montserrat";
 
 export default ({ data }) => {
   return (
     <Layout>
-      <div>
-        <h1
-          className={css`
-            display: inline-block;
-            border-bottom: 1px solid rebeccapurple;
-          `}
-        >
-          Amazing Pandas Eating Things
-        </h1>
-
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <h1
+        className={css`
+          font-family: "typeface-montserrat";
+          display: inline-block;
+          margin: 80px 0;
+        `}
+      >
+        Welcome, here you can view all our UX consultants
+      </h1>
+      <div
+        className={css`
+          font-family: "typeface-montserrat";
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          grid-gap: 18px;
+          justify-content: space-between;
+        `}
+      >
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
               to={node.fields.slug}
               className={css`
+                font-family: "typeface-montserrat";
                 text-decoration: none;
                 color: inherit;
               `}
             >
-              <h3
-                className={css`
-                  margin-bottom: ${rhythm(1 / 4)};
-                `}
-              >
-                {node.frontmatter.title}{" "}
-                <span
-                  className={css`
-                    color: #bbb;
-                  `}
-                >
-                  {" "}
-                  - {node.frontmatter.date}
-                </span>
-              </h3>
-              <img
-                src={node.frontmatter.cover_image.childImageSharp.fluid.src}
-                alt="cover"
+              <Card
+                strengths={node.frontmatter.strengths}
+                level={node.frontmatter.level}
+                name={node.frontmatter.name}
+                img={node.frontmatter.cover_image.childImageSharp.fluid.src}
               />
-              <p>{node.excerpt}</p>
             </Link>
           </div>
         ))}
@@ -57,14 +52,15 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark {
       totalCount
       edges {
         node {
           id
           frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
+            name
+            strengths
+            level
             cover_image {
               publicURL
               childImageSharp {
@@ -78,7 +74,6 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
         }
       }
     }
