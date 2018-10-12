@@ -1,0 +1,30 @@
+.detail-card__home-link {
+  width: 100%;
+  float: left;
+  text-decoration: none;
+}
+
+.detail-card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.detail-card__contact-button {
+  text-decoration: none;
+  background-color: blue;
+  color: #fff;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.detail-card__quote {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.detail-card__summary-keyskills {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}

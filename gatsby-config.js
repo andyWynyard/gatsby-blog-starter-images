@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Pandas Eating Lots`
+    title: `Maverick UX`
   },
   plugins: [
     `gatsby-remark-copy-linked-files`,
