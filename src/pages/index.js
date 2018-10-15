@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import Card from "../components/card";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { css } from "react-emotion";
 import CTA from "../components/cta";
 import AllUX from "../components/allUXers";
@@ -42,7 +41,7 @@ export const query = graphql`
             name
             strengths
             level
-            keySkills
+
             cover_image {
               publicURL
               childImageSharp {
