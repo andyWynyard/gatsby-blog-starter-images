@@ -1,4 +1,5 @@
 import React from "react";
+import { Anchor } from "./button";
 
 import "./cta.css";
 
@@ -18,9 +19,9 @@ export default props => (
         Find a consultant you found interesting?
       </h3>
 
-      <a className="cta__button" href={props.contact}>
-        Get in touch!
-      </a>
+      <Anchor src={props.contact} color="white" backgroundColor="#50a1fd">
+        Lets Talk
+      </Anchor>
     </div>
   </div>
 );
