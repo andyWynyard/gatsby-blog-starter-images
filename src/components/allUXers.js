@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./card";
-import CTA from "./cta";
 import { Link } from "gatsby";
 import { css } from "react-emotion";
 
@@ -25,8 +24,7 @@ export default props => {
           justify-content: center;
           margin: 0 auto;
 
-          padding-bottom: 100px;
-          padding-top: 20px;
+          padding: 20px 20px 100px 20px;
           max-width: 910px;
         `}
       >

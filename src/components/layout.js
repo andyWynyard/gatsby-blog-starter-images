@@ -29,7 +29,6 @@ export default ({ children }) => (
             margin: 0 auto;
             max-width: 920px;
             padding: 0 20px;
-
             padding-top: 50px;
           `}
         >
@@ -61,11 +60,6 @@ export default ({ children }) => (
               text-decoration: none;
               line-height: 20px;
               transition: all 0.3s;
-
-              :hover {
-                /* transform: scale(1.1);
-                text-shadow: 0 2px 2px #50a1fd; */
-              }
             `}
           >
             About
