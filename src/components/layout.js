@@ -27,7 +27,7 @@ export default ({ children }) => (
         <div
           className={css`
             margin: 0 auto;
-            max-width: 920px;
+            max-width: 900px;
             padding: 0 20px;
             padding-top: 50px;
           `}
