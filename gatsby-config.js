@@ -3,7 +3,9 @@ module.exports = {
     title: `Maverick UX`,
     homepage: "https://maverickbysigma.se/",
     people: "https://maverickbysigma.se/people/",
-    work: "https://maverickbysigma.se/work/"
+    work: "https://maverickbysigma.se/work/",
+    peterContact: `mailto:peter.knapp@sigma.se?Subject=Jag%20vill%20höra%20mer%20om%20UX`,
+    malinContact: `mailto:malin.bryntesson@sigma.se?Subject=Jag%20vill%20höra%20mer%20om%20UX`
   },
   plugins: [
     `gatsby-remark-copy-linked-files`,

@@ -3,6 +3,8 @@ import { css } from "react-emotion";
 import { Link, StaticQuery, graphql } from "gatsby";
 import Footer from "./footer";
 
+import CTA from "./cta";
+
 import logo from "../media/logo.png";
 
 export default ({ children }) => (
@@ -11,13 +13,16 @@ export default ({ children }) => (
       query {
         site {
           siteMetadata {
-            title
+            peterContact
+            work
+            homepage
+            people
           }
         }
       }
     `}
     render={data => {
-      console.log("Data: ", data);
+      const metadata = data.site.siteMetadata;
 
       return (
         <div
@@ -40,7 +45,7 @@ export default ({ children }) => (
           </Link>
 
           <a
-            href="mailto:peter.knapp@sigma.se?Subject=Jag%20vill%20höra%20mer%20om%20UX"
+            href={metadata.peterContact}
             target="_top"
             className={css`
               float: right;
@@ -81,7 +86,11 @@ export default ({ children }) => (
             About
           </Link>
           {children}
-          <Footer />
+          <Footer
+            work={metadata.people}
+            homepage={metadata.homepage}
+            people={metadata.people}
+          />
         </div>
       );
     }}
