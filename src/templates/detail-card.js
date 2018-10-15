@@ -3,9 +3,12 @@ import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 import "./detail-card.css";
 
+import CTA from "../components/cta";
+import AllUX from "../components/allUXers";
+
 export default ({ data }) => {
   const post = data.markdownRemark;
-  console.log("MD: ", post);
+  const metadata = data.site.siteMetadata;
 
   return (
     <Layout>
@@ -22,9 +25,7 @@ export default ({ data }) => {
 
         <div className={`detail-card-content`}>
           <a
-            href={`mailto:${
-              post.frontmatter.email
-            }?Subject=Jag%20vill%20höra%20mer%20om%20UX`}
+            href={metadata.malinContact}
             className={`detail-card__contact-button`}
           >
             Get in touch
@@ -53,13 +54,18 @@ export default ({ data }) => {
             </div>
             <div className="detail-card__keyskills">
               <h5 className="detail-card__keyskills--heading">Key Skills</h5>
-              {post.frontmatter.keySkills.map(item => (
-                <p className="detail-card__keyskills--content">{item}</p>
+              {post.frontmatter.keySkills.map((item, i) => (
+                <p key={i} className="detail-card__keyskills--content">
+                  {item}
+                </p>
               ))}
             </div>
           </div>
         </div>
       </div>
+
+      <CTA contact={metadata.peterContact} />
+      <AllUX bgColor={`#f7f7f7`} data={data.allMarkdownRemark.edges} />
     </Layout>
   );
 };
@@ -91,6 +97,39 @@ export const query = graphql`
             fluid {
               src
             }
+          }
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        people
+        malinContact
+        peterContact
+      }
+    }
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            name
+            strengths
+            level
+            keySkills
+            cover_image {
+              publicURL
+              childImageSharp {
+                id
+                fluid {
+                  src
+                }
+              }
+            }
+          }
+          fields {
+            slug
           }
         }
       }

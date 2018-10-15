@@ -1,0 +1,37 @@
+.cta {
+  background-color: #f7f7f7;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.cta__content {
+  padding: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta__statement {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.cta__question {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.cta__button {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #1e66fb;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 3px 3px -2px #999;
+}

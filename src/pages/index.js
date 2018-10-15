@@ -3,8 +3,12 @@ import Layout from "../components/layout";
 import Card from "../components/card";
 import { graphql, Link } from "gatsby";
 import { css } from "react-emotion";
+import CTA from "../components/cta";
+import AllUX from "../components/allUXers";
 
 export default ({ data }) => {
+  console.log(data);
+
   return (
     <Layout>
       <h1
@@ -16,40 +20,21 @@ export default ({ data }) => {
       >
         Welcome, here you can view all our UX consultants
       </h1>
-      <div
-        className={css`
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          grid-gap: 18px;
-          justify-content: space-between;
-          margin-bottom: 100px;
-        `}
-      >
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <Link
-              to={node.fields.slug}
-              className={css`
-                text-decoration: none;
-                color: inherit;
-              `}
-            >
-              <Card
-                strengths={node.frontmatter.strengths}
-                level={node.frontmatter.level}
-                name={node.frontmatter.name}
-                img={node.frontmatter.cover_image.childImageSharp.fluid.src}
-              />
-            </Link>
-          </div>
-        ))}
+      <div>
+        <AllUX data={data.allMarkdownRemark.edges} />
       </div>
+      <CTA contact={data.site.siteMetadata.peterContact} />
     </Layout>
   );
 };
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        peterContact
+      }
+    }
     allMarkdownRemark {
       totalCount
       edges {
