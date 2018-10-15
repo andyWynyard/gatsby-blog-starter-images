@@ -25,7 +25,7 @@ export default props => {
           margin: 0 auto;
 
           padding: 20px 20px 100px 20px;
-          max-width: 910px;
+          max-width: 900px;
         `}
       >
         {props.data.map(item => {
