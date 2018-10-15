@@ -10,7 +10,7 @@ strengths:
   - "design"
   - "development"
 level: "Mid-level"
-quote: "Try, try, try, and try again."
+quote: "Användarens kärlek min belöning"
 summary: "A bunch of stuff about this person making them sound like they are awesome."
 keySkills:
   - "Product Design"

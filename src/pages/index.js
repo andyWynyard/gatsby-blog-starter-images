@@ -22,6 +22,7 @@ export default ({ data }) => {
           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
           grid-gap: 18px;
           justify-content: space-between;
+          margin-bottom: 100px;
         `}
       >
         {data.allMarkdownRemark.edges.map(({ node }) => (

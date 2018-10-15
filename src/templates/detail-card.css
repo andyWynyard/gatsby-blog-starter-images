@@ -2,7 +2,7 @@
   text-decoration: none;
   max-width: 500px;
   margin: 0 auto;
-  color: blue;
+  color: #0070c9;
 }
 
 .detail-card__home-link::before {
@@ -20,7 +20,7 @@
 
 .detail-card__contact-button {
   text-decoration: none;
-  background-color: blue;
+  background-color: #00b460;
   color: #fff;
   float: right;
   padding: 5px 10px;
@@ -55,7 +55,7 @@
 .detail-card__downloads {
   text-decoration: none;
   margin: 0 10px 10px 0;
-  color: blue;
+  color: #0070c9;
 }
 
 .detail-card__horizontal-line {
