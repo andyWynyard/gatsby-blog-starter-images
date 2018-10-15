@@ -5,7 +5,6 @@ import { Link } from "gatsby";
 import { css } from "react-emotion";
 
 export default props => {
-  console.log(props);
   return (
     <div
       className={css`

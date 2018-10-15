@@ -2,9 +2,10 @@ import React from "react";
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 import "./detail-card.css";
-
+import { Anchor } from "../components/button";
 import CTA from "../components/cta";
 import AllUX from "../components/allUXers";
+import MissionCard from "../components/missionCard";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -24,12 +25,9 @@ export default ({ data }) => {
         />
 
         <div className={`detail-card-content`}>
-          <a
-            href={metadata.malinContact}
-            className={`detail-card__contact-button`}
-          >
+          <Anchor float="right" color="white" backgroundColor="#00b460">
             Get in touch
-          </a>
+          </Anchor>
           <h1 className={`detail-card__heading1`}>{post.frontmatter.name}</h1>
           <a
             className={`detail-card__downloads`}
@@ -47,19 +45,33 @@ export default ({ data }) => {
           <p className={`detail-card__quote`}>"{post.frontmatter.quote}"</p>
           <div className="detail-card__summary-keyskills">
             <div className="detail-card__summary">
-              <h5 className="detail-card__summary--heading">Summary</h5>
+              <h4 className="detail-card__summary--heading">Summary</h4>
               <p className="detail-card__summary--content">
                 {post.frontmatter.summary}
               </p>
             </div>
             <div className="detail-card__keyskills">
-              <h5 className="detail-card__keyskills--heading">Key Skills</h5>
+              <h4 className="detail-card__keyskills--heading">Key Skills</h4>
               {post.frontmatter.keySkills.map((item, i) => (
                 <p key={i} className="detail-card__keyskills--content">
                   {item}
                 </p>
               ))}
             </div>
+          </div>
+          <div>
+            <h4 className={`detail-card__accolades-title`}>Projects</h4>
+            {post.frontmatter.projects.map((item, i) => {
+              return <MissionCard key={i} data={item} />;
+            })}
+            <h4 className={`detail-card__accolades-title`}>Experience</h4>
+            {post.frontmatter.experience.map((item, i) => {
+              return <MissionCard key={i} data={item} />;
+            })}
+            <h4 className={`detail-card__accolades-title`}>Education</h4>
+            {post.frontmatter.education.map((item, i) => {
+              return <MissionCard key={i} data={item} />;
+            })}
           </div>
         </div>
       </div>
@@ -85,6 +97,18 @@ export const query = graphql`
         cv_download
         keySkills
         projects {
+          name
+          role
+          date
+          about
+        }
+        experience {
+          name
+          role
+          date
+          about
+        }
+        education {
           name
           role
           date

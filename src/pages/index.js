@@ -7,8 +7,6 @@ import CTA from "../components/cta";
 import AllUX from "../components/allUXers";
 
 export default ({ data }) => {
-  console.log(data);
-
   return (
     <Layout>
       <h1

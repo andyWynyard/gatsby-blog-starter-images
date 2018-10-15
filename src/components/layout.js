@@ -2,8 +2,7 @@ import React from "react";
 import { css } from "react-emotion";
 import { Link, StaticQuery, graphql } from "gatsby";
 import Footer from "./footer";
-
-import CTA from "./cta";
+import { Anchor } from "./button";
 
 import logo from "../media/logo.png";
 
@@ -43,29 +42,15 @@ export default ({ children }) => (
               alt={logo}
             />
           </Link>
-
-          <a
-            href={metadata.peterContact}
-            target="_top"
-            className={css`
-              float: right;
-              color: white;
-              background-color: #50a1fd;
-              /* background-image: linear-gradient(to right, #50a1fd, #00e2fa); */
-              padding: 5px 20px;
-              border-radius: 200px;
-              margin: 0 10px;
-              text-decoration: none;
-              line-height: 20px;
-              transition: all 0.3s;
-              :hover {
-                transform: scale(1.05);
-                box-shadow: 0 4px 4px -2px #eee;
-              }
-            `}
+          <Anchor
+            src={metadata.peterContact}
+            float="right"
+            color="white"
+            backgroundColor="#50a1fd"
           >
             Lets Talk
-          </a>
+          </Anchor>
+
           <Link
             to={`/about/`}
             className={css`
