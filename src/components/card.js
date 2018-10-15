@@ -8,33 +8,53 @@ export default props => (
       display: grid;
     `}
   >
-    <img
-      src={props.img}
-      alt={props.img}
+    <div
       className={css`
         width: 100%;
+        margin: 2px;
         border-radius: 4px;
-        box-shadow: 1px 1px 3px #ddd;
+        height: 0;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 75%;
+        box-shadow: 1px 1px 10px #eee;
       `}
-    />
+    >
+      <img
+        src={props.img}
+        alt={props.img}
+        className={css`
+          width: 100%;
+          height: auto;
+        `}
+      />
+    </div>
     <div>
       <h6
         className={css`
           float: right;
-          margin-top: 4px;
+          margin-top: 12px;
+          font-weight: 400;
         `}
       >
         {props.level}
       </h6>
-      <h3>{props.name}</h3>
-      <h5
+      <h4
         className={css`
-          margin-bottom: 5px;
+          margin-top: 11px;
+          margin-bottom: 10px;
+        `}
+      >
+        {props.name}
+      </h4>
+      <h6
+        className={css`
+          margin-bottom: 0;
           text-transform: uppercase;
         `}
       >
         Core Strengths
-      </h5>
+      </h6>
       <p
         className={css`
           font-size: 10px;
