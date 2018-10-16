@@ -10,9 +10,7 @@ export default ({ data }) => {
     <Layout>
       <h1
         className={css`
-          display: inline-block;
           margin: 80px 0;
-          font-size: 35px;
         `}
       >
         Welcome, here you can view all our UX consultants
