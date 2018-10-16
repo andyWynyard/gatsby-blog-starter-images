@@ -3,6 +3,8 @@ import { css } from "react-emotion";
 import { Link, StaticQuery, graphql } from "gatsby";
 import Footer from "./footer";
 import { Anchor } from "./button";
+import "../utils/sanitize.css";
+import "./layout.css";
 
 import logo from "../media/logo.png";
 

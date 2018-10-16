@@ -19,7 +19,7 @@ export default props => {
       <div
         className={css`
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
           grid-gap: 18px;
           justify-content: center;
           margin: 0 auto;

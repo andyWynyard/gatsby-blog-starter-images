@@ -29,8 +29,12 @@ export default props => (
         `}
       />
     </div>
-    <div>
-      <h6
+    <div
+      className={css`
+        padding: 0 5px;
+      `}
+    >
+      <h4
         className={css`
           float: right;
           margin-top: 12px;
@@ -38,30 +42,24 @@ export default props => (
         `}
       >
         {props.level}
-      </h6>
-      <h4
+      </h4>
+      <h3
         className={css`
-          margin-top: 11px;
+          margin-top: 12px;
           margin-bottom: 10px;
         `}
       >
         {props.name}
-      </h4>
-      <h6
+      </h3>
+      <h5
         className={css`
           margin-bottom: 0;
           text-transform: uppercase;
         `}
       >
         Core Strengths
-      </h6>
-      <p
-        className={css`
-          font-size: 10px;
-        `}
-      >
-        {props.strengths.map(item => item + ", ")}
-      </p>
+      </h5>
+      <p>{props.strengths.map(item => item + ", ")}</p>
     </div>
   </div>
 );

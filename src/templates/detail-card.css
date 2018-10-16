@@ -14,11 +14,13 @@
   overflow: hidden;
   padding-bottom: 75%;
   margin-bottom: 20px;
+  border-radius: 4px;
 }
 .detail-card__image {
   margin-top: 10px;
   width: 100%;
   height: auto;
+  border-radius: 4px;
 }
 
 .detail-card {

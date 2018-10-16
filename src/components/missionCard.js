@@ -10,25 +10,27 @@ class MissionCard extends Component {
   render() {
     return (
       <div className="mission-card__wrapper">
-        <div className={`mission-card`}>
-          <button
-            onClick={() =>
-              this.setState(state => ({ showDetail: !state.showDetail }))
-            }
-            className="mission-card__show-button"
-          >
+        <div
+          onClick={() =>
+            this.setState(state => ({ showDetail: !state.showDetail }))
+          }
+          className={`mission-card`}
+        >
+          <p className="mission-card__show-button">
             {this.state.showDetail ? "Show less" : "Read more"}
-          </button>
+          </p>
 
           <ul className={`mission-card__list`}>
             <li className={`mission-card__list--item`}>
-              <h4 className="mission-card__title">{this.props.data.name}</h4>
+              <h5 className="mission-card__title">{this.props.data.name}</h5>
             </li>
             &nbsp;&nbsp;&#183;&nbsp;&nbsp;
             <li className={`mission-card__list--item`}>
               {this.props.data.date}
             </li>
-            &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+            <span className={`mission-card__dots`}>
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+            </span>
             <li className={`mission-card__list--item`}>
               {this.props.data.role}
             </li>
@@ -36,7 +38,7 @@ class MissionCard extends Component {
 
           {this.state.showDetail ? (
             <span className="mission-card__about">
-              <p className="mission-card__about--title">About the position</p>
+              <h5 className="mission-card__about--title">About the position</h5>
               <p className="mission-card__about--content">
                 {this.props.data.about}
               </p>
