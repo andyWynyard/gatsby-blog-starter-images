@@ -1,6 +1,6 @@
 .detail-card__home-link {
   text-decoration: none;
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   color: #0070c9;
 }
@@ -8,14 +8,25 @@
 .detail-card__home-link::before {
   content: "<";
 }
-
+.detail-car__img-wrapper {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 75%;
+  margin-bottom: 20px;
+}
 .detail-card__image {
   margin-top: 10px;
+  width: 100%;
+  height: auto;
 }
 
 .detail-card {
-  max-width: 500px;
+  max-width: 700px;
   margin: 20px auto;
+}
+.detail-card__content {
+  margin-bottom: 100px;
 }
 
 .detail-card__contact-button {
