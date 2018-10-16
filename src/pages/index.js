@@ -4,15 +4,12 @@ import { graphql } from "gatsby";
 import { css } from "react-emotion";
 import CTA from "../components/cta";
 import AllUX from "../components/allUXers";
+import "./index.css";
 
 export default ({ data }) => {
   return (
     <Layout>
-      <h1
-        className={css`
-          margin: 80px 0;
-        `}
-      >
+      <h1 className={`index__heading`}>
         Welcome, here you can view all our UX consultants
       </h1>
       <div>
