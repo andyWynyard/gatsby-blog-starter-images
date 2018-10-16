@@ -18,13 +18,15 @@ export default ({ data }) => {
           {" "}
           Back to all our consultants
         </Link>
-        <img
-          className={`detail-card__image`}
-          src={post.frontmatter.cover_image.childImageSharp.fluid.src}
-          alt="This is me"
-        />
+        <div className="detail-car__img-wrapper">
+          <img
+            className={`detail-card__image`}
+            src={post.frontmatter.cover_image.childImageSharp.fluid.src}
+            alt="This is me"
+          />
+        </div>
 
-        <div className={`detail-card-content`}>
+        <div className={`detail-card__content`}>
           <Anchor float="right" color="white" backgroundColor="#00b460">
             Get in touch
           </Anchor>
