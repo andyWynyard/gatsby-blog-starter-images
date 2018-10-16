@@ -43,7 +43,9 @@ export default ({ data }) => {
           >
             Download CV
           </a>{" "}
+          <br />
           <hr className={`detail-card__horizontal-line`} />
+          <br />
           <p className={`detail-card__quote`}>"{post.frontmatter.quote}"</p>
           <div className="detail-card__summary-keyskills">
             <div className="detail-card__summary">
@@ -63,9 +65,9 @@ export default ({ data }) => {
           </div>
           <div>
             <h4 className={`detail-card__accolades-title`}>Projects</h4>
-            {post.frontmatter.projects.map((item, i) => {
-              return <MissionCard key={i} data={item} />;
-            })}
+            {post.frontmatter.projects.map((item, i) => (
+              <MissionCard key={i} data={item} />
+            ))}
             <h4 className={`detail-card__accolades-title`}>Experience</h4>
             {post.frontmatter.experience.map((item, i) => {
               return <MissionCard key={i} data={item} />;
@@ -79,7 +81,11 @@ export default ({ data }) => {
       </div>
 
       <CTA contact={metadata.peterContact} />
-      <AllUX bgColor={`#f7f7f7`} data={data.allMarkdownRemark.edges} />
+      <AllUX
+        width="200"
+        bgColor={`#f7f7f7`}
+        data={data.allMarkdownRemark.edges}
+      />
     </Layout>
   );
 };
