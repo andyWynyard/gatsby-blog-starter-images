@@ -2,6 +2,7 @@ import React from "react";
 import { Anchor } from "./button";
 
 import "./cta.css";
+import { isNull } from "util";
 
 export default props => (
   <div
@@ -19,7 +20,12 @@ export default props => (
         Find a consultant you found interesting?
       </h3>
 
-      <Anchor src={props.contact} color="white" backgroundColor="#50a1fd">
+      <Anchor
+        src={props.contact}
+        float={isNull}
+        color="white"
+        backgroundColor="#50a1fd"
+      >
         Lets Talk
       </Anchor>
     </div>

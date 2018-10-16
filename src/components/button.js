@@ -31,7 +31,16 @@ export const Anchor = props => (
       color: ${props.color};
       background-color: ${props.backgroundColor};
       cursor: pointer;
-
+      /* If there is a diaplay property
+        it will take that property, otherwise, 
+        if there is no float property,
+        it will be "inline-block" otherwise the 
+        transition property wont work */
+      display: ${props.display
+        ? props.display
+        : props.float
+          ? "inline-block"
+          : null};
       padding: 5px 20px;
       border-radius: 200px;
       margin: 0 10px;
