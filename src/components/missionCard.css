@@ -1,23 +1,24 @@
 .mission-card__wrapper {
-  border-radius: 4px;
-  margin-bottom: 5px;
-  /* padding: 10px 20px 5px 20px; */
+  border-radius: 7px !important;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px -2px #999;
 }
 .mission-card {
-  margin: 5px 0;
-  cursor: pointer;
-  position: relative;
   width: 100%;
 }
 .mission-card:hover > .mission-card__show-button {
   text-decoration: underline;
 }
-
+.mission-card__expansion-panel {
+  border-radius: 10px;
+}
 .mission-card__show-button {
   color: #1e66fb;
   border: none;
   background-color: inherit;
   margin: 0;
+  margin-top: 5px;
   padding: 0;
   width: auto;
   overflow: visible;
@@ -25,11 +26,9 @@
   outline: none;
   cursor: pointer;
   text-decoration: inherit;
-  margin-left: auto;
-  margin-right: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+
+  float: right;
+  font-size: 12px;
 }
 
 .mission-card__title {
