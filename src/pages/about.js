@@ -4,7 +4,7 @@ import { css } from "react-emotion";
 import { graphql } from "gatsby";
 import { Transition, CSSTransition } from "react-transition-group";
 
-import "./About.css";
+import "./about.css";
 
 class About extends React.Component {
   state = {
