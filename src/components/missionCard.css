@@ -50,7 +50,18 @@
 
 .mission-card__list--item {
   display: inline-block;
+  margin: 0;
 }
-.mission-card__dots {
-  color: #777;
+
+.mission-card__list--item:not(:first-of-type) {
+  color: #707070;
+}
+
+.mission-card__list--item:not(:first-of-type)::before {
+  color: #d3d3d3;
+  font-size: 10px;
+  vertical-align: middle;
+  content: "●";
+  margin-left: 20px;
+  margin-right: 20px;
 }

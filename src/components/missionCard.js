@@ -32,19 +32,15 @@ class MissionCard extends Component {
 
               <ul className={`mission-card__list`}>
                 <li className={`mission-card__list--item`}>
-                  <h5 className="mission-card__title">
+                  <h4 className="mission-card__title">
                     {this.props.data.name}
-                  </h5>
+                  </h4>
                 </li>
-                <span className={`mission-card__dots`}>
-                  &nbsp;&nbsp;&#183;&nbsp;&nbsp;
-                </span>
+
                 <li className={`mission-card__list--item`}>
                   {this.props.data.date}
                 </li>
-                <span className={`mission-card__dots`}>
-                  &nbsp;&nbsp;&#183;&nbsp;&nbsp;
-                </span>
+
                 <li className={`mission-card__list--item`}>
                   {this.props.data.role}
                 </li>
