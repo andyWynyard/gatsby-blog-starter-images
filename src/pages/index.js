@@ -9,7 +9,7 @@ import "./index.css";
 export default ({ data }) => {
   return (
     <Layout>
-      <h1 className={`index__heading`}>
+      <h1 className="index__heading">
         Welcome, here you can view all our UX consultants
       </h1>
       <div>
