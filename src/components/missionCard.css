@@ -32,7 +32,6 @@
 }
 
 .mission-card__title {
-  margin-bottom: 0;
 }
 
 .mission-card__about--title {
@@ -45,12 +44,14 @@
 
 .mission-card__list {
   margin: 0;
-  height: 25px;
+  padding-top: 10px;
+  height: 100%;
 }
 
 .mission-card__list--item {
   display: inline-block;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .mission-card__list--item:not(:first-of-type) {

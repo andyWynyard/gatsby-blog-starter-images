@@ -37,8 +37,9 @@ export default props => (
       <h4
         className={css`
           float: right;
-          margin-top: 12px;
+          margin-top: 16px;
           font-weight: 400;
+          margin-left: 3px;
         `}
       >
         {props.level}

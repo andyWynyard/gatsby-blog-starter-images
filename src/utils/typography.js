@@ -8,6 +8,8 @@ const typography = new Typography({
       styles: ["400", "700", "900"]
     }
   ],
+
+  baseFontSize: "15px",
   headerFontFamily: ["Montserrat", "serif"],
   bodyFontFamily: ["Montserrat", "serif"]
 });

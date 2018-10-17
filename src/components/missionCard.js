@@ -26,9 +26,9 @@ class MissionCard extends Component {
             expandIcon={<ExpandMoreIcon />}
           >
             <div className={`mission-card`}>
-              <p className="mission-card__show-button">
+              {/* <p className="mission-card__show-button">
                 {this.state.showDetail ? "Show less" : "Read more"}
-              </p>
+              </p> */}
 
               <ul className={`mission-card__list`}>
                 <li className={`mission-card__list--item`}>
@@ -50,7 +50,7 @@ class MissionCard extends Component {
 
           <ExpansionPanelDetails>
             <span className="mission-card__about">
-              <h5 className="mission-card__about--title">About the position</h5>
+              <h5 className="mission-card__about--title">About:</h5>
               <p className="mission-card__about--content">
                 {this.props.data.about}
               </p>
