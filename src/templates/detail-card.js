@@ -32,10 +32,11 @@ export default ({ data }) => {
           </Anchor>
           <h1 className={`detail-card__heading1`}>{post.frontmatter.name}</h1>
           <a
+            target="_blank"
             className={`detail-card__downloads`}
             href={post.frontmatter.portfolio_download}
           >
-            Download Portfolio
+            Portfolio
           </a>
           <a
             className={`detail-card__downloads`}
@@ -69,10 +70,10 @@ export default ({ data }) => {
             {post.frontmatter.projects.map((item, i) => (
               <MissionCard key={i} data={item} />
             ))}
-            <h4 className={`detail-card__accolades-title`}>Experience</h4>
+            {/* <h4 className={`detail-card__accolades-title`}>Experience</h4>
             {post.frontmatter.experience.map((item, i) => {
               return <MissionCard key={i} data={item} />;
-            })}
+            })} */}
             <h4 className={`detail-card__accolades-title`}>Education</h4>
             {post.frontmatter.education.map((item, i) => {
               return <MissionCard key={i} data={item} />;

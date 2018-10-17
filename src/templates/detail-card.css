@@ -48,7 +48,7 @@
 
 .detail-card__summary-keyskills {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 
