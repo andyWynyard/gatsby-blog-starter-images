@@ -18,7 +18,7 @@ export default ({ data }) => {
           {" "}
           Back to all our consultants
         </Link>
-        <div className="detail-car__img-wrapper">
+        <div className="detail-card__img-wrapper">
           <img
             className={`detail-card__image`}
             src={post.frontmatter.cover_image.childImageSharp.fluid.src}
@@ -40,6 +40,7 @@ export default ({ data }) => {
           <a
             className={`detail-card__downloads`}
             href={post.frontmatter.cv_download}
+            download
           >
             Download CV
           </a>{" "}

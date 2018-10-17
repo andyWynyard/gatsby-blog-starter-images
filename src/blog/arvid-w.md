@@ -4,8 +4,8 @@ section: cv
 email: "arvid.wollin@sigma.se"
 phone: "+46 708 18 28 51"
 cover_image: "./arvid-w.jpg"
-portfolio_download: "www.google.com"
-cv_download: "www.google.com"
+portfolio_download: https://cdn-images-1.medium.com/max/1600/0*r0KMRut9Rx49z6GX.jpg
+cv_download: https://cdn-images-1.medium.com/max/1600/0*r0KMRut9Rx49z6GX.jpg
 strengths:
   - "design"
   - "development"
