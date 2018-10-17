@@ -19,13 +19,13 @@ class MissionCard extends Component {
     return (
       <div className="mission-card__wrapper">
         <ExpansionPanel>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <div
-              onClick={() =>
-                this.setState(state => ({ showDetail: !state.showDetail }))
-              }
-              className={`mission-card`}
-            >
+          <ExpansionPanelSummary
+            onClick={() =>
+              this.setState(state => ({ showDetail: !state.showDetail }))
+            }
+            expandIcon={<ExpandMoreIcon />}
+          >
+            <div className={`mission-card`}>
               <p className="mission-card__show-button">
                 {this.state.showDetail ? "Show less" : "Read more"}
               </p>
