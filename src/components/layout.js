@@ -30,7 +30,7 @@ export default ({ children }) => (
           className={css`
             margin: 0 auto;
             max-width: 900px;
-            padding: 0 20px;
+            padding: 0 10px;
             padding-top: 50px;
           `}
         >
@@ -52,20 +52,6 @@ export default ({ children }) => (
             Lets Talk
           </Anchor>
 
-          <Link
-            to={`/about/`}
-            className={css`
-              float: right;
-              padding: 5px 20px;
-              color: #50a1fd;
-              margin: 0 10px;
-              text-decoration: none;
-              line-height: 20px;
-              transition: all 0.3s;
-            `}
-          >
-            About
-          </Link>
           {children}
           <Footer
             work={metadata.people}

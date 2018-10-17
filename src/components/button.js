@@ -43,7 +43,7 @@ export const Anchor = props => (
           : null};
       padding: 5px 20px;
       border-radius: 200px;
-      margin: 0 10px;
+      margin: 0 ${props.marginSide || 0}px;
       text-decoration: none;
       line-height: 20px;
       transition: all 0.3s;
