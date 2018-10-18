@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
-import { css } from "react-emotion";
 import CTA from "../components/cta";
 import AllUX from "../components/allUXers";
 import "./index.css";
