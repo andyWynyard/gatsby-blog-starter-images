@@ -1,9 +1,7 @@
 import React from "react";
-import { css } from "react-emotion";
 import { Link, StaticQuery, graphql } from "gatsby";
 import Footer from "./footer";
 import { Anchor } from "./button";
-import "../utils/sanitize.css";
 import "./layout.css";
 
 import logo from "../media/logo.png";
@@ -26,22 +24,9 @@ export default ({ children }) => (
       const metadata = data.site.siteMetadata;
 
       return (
-        <div
-          className={css`
-            margin: 0 auto;
-            max-width: 900px;
-            padding: 0 10px;
-            padding-top: 50px;
-          `}
-        >
+        <div className={`layout`}>
           <Link to={`/`}>
-            <img
-              className={css`
-                width: 140px;
-              `}
-              src={logo}
-              alt={logo}
-            />
+            <img className={`layout__link`} src={logo} alt={logo} />
           </Link>
           <Anchor
             src={metadata.peterContact}
