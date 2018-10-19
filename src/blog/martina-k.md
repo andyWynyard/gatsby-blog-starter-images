@@ -11,7 +11,8 @@ strengths:
   - "structure"
   - "working agile"
 level: "Mid-level"
-quote: "UX design is like working out a puzzle. There are many pieces that need to fit together and the best way to find the right one is to try them out."
+quote: 
+  - "UX design is like working out a puzzle. There are many pieces that need to fit together and the best way to find the right one is to try them out."
 summary: "Martina is a UX designer with a background within the retail and telecom industries where the focus has been on creating good user experiences out of business requirements.
 In recent years she has been working with technical online platforms and development/design for both the web and app platforms. She has been part of many agile projects where she - together with her team - analyzed and developed new functionalities and features. By holding workshops and brainstorming sessions with clients and other teams Martina processes thoughts and ideas to user centered design in an efficient way.
 

@@ -8,7 +8,7 @@ import "./about.css";
 
 class About extends React.Component {
   state = {
-    show: true,
+    show: false,
     entered: false,
     name: "",
     showValidationMessage: false,
@@ -39,7 +39,7 @@ class About extends React.Component {
           <CSSTransition
             in={show}
             timeout={1000}
-            classNames="star"
+            classNames="message"
             unmountOnExit
           >
             <div

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, StaticQuery, graphql } from "gatsby";
 import Footer from "./footer";
+
 import { Anchor } from "./button";
 import "./layout.css";
 

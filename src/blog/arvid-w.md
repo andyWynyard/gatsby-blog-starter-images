@@ -10,7 +10,8 @@ strengths:
   - "design"
   - "development"
 level: "Mid-level"
-quote: "Användarens kärlek min belöning"
+quote:
+  - "Användarens kärlek min belöning"
 summary: "A bunch of stuff about this person making them sound like they are awesome."
 keySkills:
   - "Product Design"

@@ -27,7 +27,12 @@ export default ({ data }) => {
         </div>
 
         <div className={`detail-card__content`}>
-          <Anchor float="right" color="white" backgroundColor="#00b460">
+          <Anchor
+            src={metadata.malinContact}
+            float="right"
+            color="white"
+            backgroundColor="#00b460"
+          >
             Get in touch
           </Anchor>
           <h1 className={`detail-card__heading1`}>{post.frontmatter.name}</h1>
@@ -48,7 +53,11 @@ export default ({ data }) => {
           <br />
           <hr className={`detail-card__horizontal-line`} />
           <br />
-          <p className={`detail-card__quote`}>"{post.frontmatter.quote}"</p>
+          {post.frontmatter.quote.map((item, i) => (
+            <p key={i} className={`detail-card__quote`}>
+              "{item}"
+            </p>
+          ))}
           <div className="detail-card__summary-keyskills">
             <div className="detail-card__summary">
               <h4 className="detail-card__summary--heading">Summary</h4>
