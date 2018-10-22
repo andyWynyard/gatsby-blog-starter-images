@@ -44,20 +44,21 @@
 .detail-card__quote {
   font-size: 15px;
   font-style: italic;
+  margin-bottom: 30px;
 }
 
 .detail-card__summary-keyskills {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 40px;
 }
 
 .detail-card__keyskills--heading {
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 
 .detail-card__summary--heading {
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 
 .detail-card__summary--content,

@@ -45,6 +45,7 @@ export default props => {
                   strengths={item.node.frontmatter.strengths}
                   level={item.node.frontmatter.level}
                   name={item.node.frontmatter.name}
+                  nameFontSize={props.width}
                   img={
                     item.node.frontmatter.cover_image.childImageSharp.fluid.src
                   }
