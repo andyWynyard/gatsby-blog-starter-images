@@ -40,7 +40,7 @@ export default ({ children }) => (
 
           {children}
           <Footer
-            work={metadata.people}
+            work={metadata.work}
             homepage={metadata.homepage}
             people={metadata.people}
           />

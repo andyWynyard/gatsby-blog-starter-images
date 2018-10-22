@@ -30,7 +30,11 @@ class MissionCard extends Component {
                 {this.state.showDetail ? "Show less" : "Read more"}
               </p> */}
 
-              <ul className={`mission-card__list`}>
+              <h4 className="mission-card__title mission-card__tablet-list">
+                {this.props.data.name}
+              </h4>
+
+              <ul className={`mission-card__list mission-card__desktop-list`}>
                 <li className={`mission-card__list--item`}>
                   <h4 className="mission-card__title">
                     {this.props.data.name}
@@ -49,12 +53,24 @@ class MissionCard extends Component {
           </ExpansionPanelSummary>
 
           <ExpansionPanelDetails>
-            <span className="mission-card__about">
-              <h5 className="mission-card__about--title">About:</h5>
-              <p className="mission-card__about--content">
-                {this.props.data.about}
-              </p>
-            </span>
+            <div className="mission-card__expansion">
+              <ul className={`mission-card__list mission-card__tablet-list`}>
+                <li className="mission-card__list--item" />
+                <li className={`mission-card__list--item`}>
+                  {this.props.data.date}
+                </li>
+
+                <li className={`mission-card__list--item`}>
+                  {this.props.data.role}
+                </li>
+              </ul>
+              <div className="mission-card__about">
+                <h5 className="mission-card__about--title">About:</h5>
+                <p className="mission-card__about--content">
+                  {this.props.data.about}
+                </p>
+              </div>
+            </div>
           </ExpansionPanelDetails>
         </ExpansionPanel>
       </div>

@@ -32,6 +32,11 @@
 }
 
 .mission-card__title {
+  margin-bottom: 0;
+}
+
+.mission-card__about {
+  width: 100%;
 }
 
 .mission-card__about--title {
@@ -44,7 +49,7 @@
 
 .mission-card__list {
   margin: 0;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   height: 100%;
 }
 
@@ -65,4 +70,20 @@
   content: "●";
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.mission-card__expansion {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 600px) {
+  .mission-card__tablet-list {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mission-card__desktop-list {
+    display: none;
+  }
 }
