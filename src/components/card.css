@@ -29,9 +29,15 @@
   margin-left: 3px;
 }
 
-.card__content-name {
+.card__content-name--normal {
   margin-top: 12px;
   margin-bottom: 10px;
+  /* font-size: 140%; */
+}
+.card__content-name--small {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .card__content-core-strengths--title {
