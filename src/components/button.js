@@ -7,8 +7,8 @@ export const Button = props => (
     className={css`
       border: none;
       background-color: inherit;
-      margin: 0;
-      padding: 0;
+      margin: ${props.margin || 0};
+      padding: ${props.padding || 0};
       width: auto;
       overflow: visible;
       font: inherit;
@@ -17,6 +17,8 @@ export const Button = props => (
       float: ${props.float};
       color: ${props.color};
       background-color: ${props.backgroundColor};
+      border: ${props.border};
+      border-radius: ${props.borderRadius};
     `}
   >
     {props.children}

@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import { css } from "react-emotion";
 import { graphql } from "gatsby";
-import { Transition, CSSTransition } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 
 import "./about.css";
 
@@ -17,7 +17,7 @@ class About extends React.Component {
 
   render() {
     const { show } = this.state;
-    const { name, showValidationMessage, showValidationButton } = this.state;
+
     return (
       <Layout>
         <div

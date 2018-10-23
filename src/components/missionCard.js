@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import { CSSTransition } from "react-transition-group"; // ES6
-
-import { css } from "react-emotion";
 
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
@@ -45,9 +42,11 @@ class MissionCard extends Component {
                   {this.props.data.date}
                 </li>
 
-                <li className={`mission-card__list--item`}>
-                  {this.props.data.role}
-                </li>
+                {!this.props.education ? (
+                  <li className={`mission-card__list--item`}>
+                    {this.props.data.role}
+                  </li>
+                ) : null}
               </ul>
             </div>
           </ExpansionPanelSummary>
