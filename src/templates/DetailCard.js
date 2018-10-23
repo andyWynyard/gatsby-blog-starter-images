@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import { CSSTransition } from "react-transition-group"; // ES6
-
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 import "./detail-card.css";
@@ -36,7 +34,7 @@ class DetailCard extends Component {
 
           <div className={`detail-card__content`}>
             <Anchor
-              src={metadata.malinContact}
+              href={metadata.malinContact}
               float="right"
               color="white"
               backgroundColor="#00b460"
@@ -70,19 +68,20 @@ class DetailCard extends Component {
             <div className="detail-card__summary-keyskills">
               <div className="detail-card__summary">
                 <h4 className="detail-card__summary--heading">Summary</h4>
-                <CSSTransition
-                  in={this.state.showMoreSummary}
-                  timeout={1000}
-                  classNames="message"
-                >
-                  <p className="detail-card__summary--content">
-                    {post.frontmatter.summary}
-                  </p>
-                </CSSTransition>
-                <Button
-                  onClick={() => {
-                    console.log("this.state.showMoreSummary");
 
+                <p
+                  className={
+                    this.state.showMoreSummary
+                      ? `detail-card__summary--content detail-card__summary--content--active`
+                      : `detail-card__summary--content`
+                  }
+                >
+                  {post.frontmatter.summary}
+                </p>
+
+                <Button
+                  className="detail-card__button"
+                  onClick={() => {
                     this.setState(state => ({
                       showMoreSummary: !state.showMoreSummary
                     }));
@@ -92,7 +91,7 @@ class DetailCard extends Component {
                   border="1px solid #00b460"
                   borderRadius="5px"
                 >
-                  Show More
+                  {this.state.showMoreSummary ? `Hide` : `Show More`}
                 </Button>
               </div>
               <div className="detail-card__keyskills">

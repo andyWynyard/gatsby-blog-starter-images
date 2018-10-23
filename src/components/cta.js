@@ -21,7 +21,7 @@ export default props => (
       </h3>
 
       <Anchor
-        src={props.contact}
+        href={props.contact}
         float={isNull}
         color="white"
         backgroundColor="#50a1fd"

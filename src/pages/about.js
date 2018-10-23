@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import { css } from "react-emotion";
 import { graphql } from "gatsby";
-import { CSSTransition } from "react-transition-group";
 
 import "./about.css";
 
@@ -36,22 +35,15 @@ class About extends React.Component {
             Show Box
           </button>
 
-          <CSSTransition
-            in={show}
-            timeout={1000}
-            classNames="message"
-            unmountOnExit
+          <div
+            className={css`
+              width: 200px;
+              height: 100px;
+              border: solid 1px red;
+            `}
           >
-            <div
-              className={css`
-                width: 200px;
-                height: 100px;
-                border: solid 1px red;
-              `}
-            >
-              This is a box
-            </div>
-          </CSSTransition>
+            This is a box
+          </div>
         </div>
       </Layout>
     );

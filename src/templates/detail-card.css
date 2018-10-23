@@ -48,7 +48,8 @@
 }
 .detail-card__summary {
   display: grid;
-  align-items: center;
+  /* align-items: center; */
+  height: 100%;
 }
 
 .detail-card__summary-keyskills {
@@ -67,8 +68,13 @@
 
 .detail-card__summary--content {
   margin-bottom: 7px;
-  max-height: 200px;
   overflow: hidden;
+  max-height: 200px;
+  transition: all 300ms linear;
+}
+
+.detail-card__summary--content--active {
+  max-height: 1000px;
 }
 .detail-card__keyskills--content {
   margin-bottom: 7px;
@@ -94,4 +100,8 @@
   margin: 0;
   margin-top: 50px;
   margin-bottom: 10px;
+}
+
+.detail-card__button:active {
+  background-color: #eee;
 }

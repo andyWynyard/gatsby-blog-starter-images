@@ -30,7 +30,7 @@ export default ({ children }) => (
             <img className={`layout__link`} src={logo} alt={logo} />
           </Link>
           <Anchor
-            src={metadata.peterContact}
+            href={metadata.peterContact}
             float="right"
             color="white"
             backgroundColor="#50a1fd"
