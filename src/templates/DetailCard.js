@@ -88,8 +88,9 @@ class DetailCard extends Component {
                   }}
                   padding="3px 15px"
                   margin="7px auto"
-                  border="1px solid #00b460"
+                  border="1px solid #50a1fd"
                   borderRadius="5px"
+                  color="#50a1fd"
                 >
                   {this.state.showMoreSummary ? `Hide` : `Show More`}
                 </Button>
