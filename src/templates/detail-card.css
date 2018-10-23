@@ -69,13 +69,13 @@
 .detail-card__summary--content {
   margin-bottom: 7px;
   overflow: hidden;
-  max-height: 200px;
+  height: 100%;
   transition: all 600ms ease-in-out;
 }
 
-.detail-card__summary--content--active {
+/* .detail-card__summary--content--active {
   max-height: 1000px;
-}
+} */
 .detail-card__keyskills--content {
   margin-bottom: 7px;
 }

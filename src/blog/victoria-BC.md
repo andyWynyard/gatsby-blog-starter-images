@@ -15,7 +15,7 @@ level: "Mid-level"
 quote:
   - "Do your best and the rest will solve itself!"
   - "Changing the world with Awesome User Experience"
-summary: "As a person I am creative, curious and a problem solver. I like to act when seeing the need and importance of leadership, that is why I am always ready to lead the team. I have worked many years as a User Interface and User Experience Designer in combination with Art Direction and Digital Marketing in areas such as e-commerce, logistics and analysis, finance and banking, and even engineering. Technical Communication and even UX-writing has been a part of my career. AJ produkter, Cowab, Gunnebo, Bombardier, Hyundai Rotem are just some of the companies I have had the pleasure to work with and in addition to that I have experience working with start-ups."
+summary: "As a person I am creative, curious and a problem solver. I like to act when seeing the need and importance of leadership. I have worked many years as a UI/UX Designer in combination with Art Direction in areas such as e-commerce, logistics, banking and finance. AJ produkter, Gunnebo, Bombardier, Hyundai are just some companies I have had the pleasure to work with. Have also worked with Startups."
 keySkills:
   - "Product Design"
   - "UX Design"

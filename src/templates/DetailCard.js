@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 import "./detail-card.css";
-import { Anchor, Button } from "../components/button";
+import { Anchor } from "../components/button";
 import CTA from "../components/cta";
 import AllUX from "../components/allUXers";
 import MissionCard from "../components/missionCard";
@@ -69,17 +69,11 @@ class DetailCard extends Component {
               <div className="detail-card__summary">
                 <h4 className="detail-card__summary--heading">Summary</h4>
 
-                <p
-                  className={
-                    this.state.showMoreSummary
-                      ? `detail-card__summary--content detail-card__summary--content--active`
-                      : `detail-card__summary--content`
-                  }
-                >
+                <p className={`detail-card__summary--content`}>
                   {post.frontmatter.summary}
                 </p>
 
-                <Button
+                {/* <Button
                   className="detail-card__button"
                   onClick={() => {
                     this.setState(state => ({
@@ -93,7 +87,7 @@ class DetailCard extends Component {
                   color="#50a1fd"
                 >
                   {this.state.showMoreSummary ? `Hide` : `Show More`}
-                </Button>
+                </Button> */}
               </div>
               <div className="detail-card__keyskills">
                 <h4 className="detail-card__keyskills--heading">Key Skills</h4>
