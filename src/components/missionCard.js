@@ -23,9 +23,20 @@ class MissionCard extends Component {
             expandIcon={<ExpandMoreIcon />}
           >
             <div className={`mission-card`}>
-              <h4 className="mission-card__title mission-card__tablet-list">
-                {this.props.data.name}
-              </h4>
+              <ul className="mission-card__list  mission-card__tablet-list">
+                <li className={`mission-card__list--item`}>
+                  <h4 className="mission-card__title">
+                    {this.props.data.logo ? (
+                      <img
+                        style={{ height: "12px", marginRight: "10px" }}
+                        src={this.props.data.logo.childImageSharp.original.src}
+                        alt="company logo"
+                      />
+                    ) : null}
+                    {this.props.data.name}
+                  </h4>
+                </li>
+              </ul>
 
               <ul className={`mission-card__list mission-card__desktop-list`}>
                 <li className={`mission-card__list--item`}>
