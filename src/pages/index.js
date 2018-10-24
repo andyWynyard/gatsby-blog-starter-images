@@ -35,7 +35,6 @@ export const query = graphql`
             name
             strengths
             level
-
             cover_image {
               publicURL
               childImageSharp {

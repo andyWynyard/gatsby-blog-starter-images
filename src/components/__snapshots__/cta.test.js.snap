@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CTA Renders Correctly 1`] = `
+<div
+  className="cta
+      "
+>
+  <div
+    className="
+          cta__content
+        "
+  >
+    <h6
+      className="cta__statement"
+    >
+      Your Creative Digital Experts
+    </h6>
+    <h3
+      className="cta__question"
+    >
+      Find a consultant you found interesting?
+    </h3>
+    <a
+      className="css-uxi9oy"
+      color="white"
+      href="mailto:peter.knapp@sigma.se?Subject=Jag%20vill%20höra%20mer%20om%20UX"
+    >
+      Lets Talk
+    </a>
+  </div>
+</div>
+`;

@@ -23,10 +23,6 @@ class MissionCard extends Component {
             expandIcon={<ExpandMoreIcon />}
           >
             <div className={`mission-card`}>
-              {/* <p className="mission-card__show-button">
-                {this.state.showDetail ? "Show less" : "Read more"}
-              </p> */}
-
               <h4 className="mission-card__title mission-card__tablet-list">
                 {this.props.data.name}
               </h4>

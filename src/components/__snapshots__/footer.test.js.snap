@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Renders Correctly 1`] = `
+<div
+  className="footer"
+>
+  <div
+    className="footer__content"
+  >
+    <p
+      className="footer__question"
+    >
+      Want to get to know us better?
+    </p>
+    <p
+      className="footer__question--two"
+    >
+      Interested in working on projects together?
+    </p>
+    <p
+      className="footer__question--two"
+    >
+      Or interested in our previous work?
+    </p>
+    <p
+      className="footer__links-title"
+    >
+      Check us out here
+    </p>
+    <p
+      className="footer__links"
+    >
+      <a
+        className="footer__link"
+        href="https://maverickbysigma.se/work/"
+      >
+        Projects
+      </a>
+        
+      /
+        
+      <a
+        className="footer__link"
+        href="https://maverickbysigma.se/"
+      >
+        Maverick Homepage
+      </a>
+        
+      /
+        
+      <a
+        className="footer__link"
+        href="https://maverickbysigma.se/people/"
+      >
+        Our People
+      </a>
+    </p>
+  </div>
+</div>
+`;
