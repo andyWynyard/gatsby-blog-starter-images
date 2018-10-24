@@ -21,17 +21,17 @@ keySkills:
   - "Sketch, Adobe XD"
   - "Agile, Scrum"
 projects:
+  - name: "Region Jämtland/Härjedalen"
+    date: "201809-"
+    id: 4875983498987439875
+    role: "UX designer"
+    about: "The project: create a user interface for SUND, the digital system that will enable Region Jämtland Härjedalen (RjH) to bill other regions and counties. Today this process is manual which is why this project will save RJH both time and money. In the project there is a reference group included in order to achieve the best usability possible."
   - name: "Svensk Travsport"
     date: "201801-201808"
     id: 944573973975
     role: "UX designer"
     about: "The project: re-design of travsport.se and svenskgalopp.se and make it more user friendly for new visitors. The focus lay in structure and making the site responsive, without losing access to important information on smaller screens.
 The scope of the project also included changing the CMS tool in order to facilitate the work for editors."
-  - name: "Region Jämtland/Härjedalen"
-    date: "201809-"
-    id: 4875983498987439875
-    role: "UX designer"
-    about: "The project: create a user interface for SUND, the digital system that will enable Region Jämtland Härjedalen (RjH) to bill other regions and counties. Today this process is manual which is why this project will save RJH both time and money. In the project there is a reference group included in order to achieve the best usability possible."
 education:
   - name: "Interaction design"
     date: "2017"

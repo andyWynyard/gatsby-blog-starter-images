@@ -144,6 +144,16 @@ export const query = graphql`
         keySkills
         projects {
           name
+          logo {
+            childImageSharp {
+              fixed {
+                base64
+              }
+              original {
+                src
+              }
+            }
+          }
           role
           date
           about
