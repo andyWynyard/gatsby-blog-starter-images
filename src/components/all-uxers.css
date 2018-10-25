@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.inner {
+  display: grid;
+
+  grid-gap: 18px;
+  justify-content: center;
+  margin: 0 auto;
+
+  padding: 20px 10px 100px 10px;
+  max-width: 900px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
