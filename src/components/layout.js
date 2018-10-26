@@ -2,11 +2,8 @@ import React from "react";
 import { Link, StaticQuery, graphql } from "gatsby";
 import styled, { createGlobalStyle } from "styled-components";
 import "typeface-montserrat";
-
 import Footer from "./footer";
-
 import { Anchor } from "./button";
-
 import logo from "../media/logo.png";
 
 const GlobalStyle = createGlobalStyle`
