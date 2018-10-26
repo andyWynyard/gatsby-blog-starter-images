@@ -2,20 +2,37 @@ import React from "react";
 import Card from "./card";
 import { Link } from "gatsby";
 import { css } from "react-emotion";
+import styled from "styled-components";
 
-export default props => {
+const Wrapper = styled.div`
+  background-color: ${props => props.bgColor};
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+`;
+
+const Inner = styled.div`
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(${props.width}px, 1fr)); */
+  grid-gap: 18px;
+  justify-content: center;
+  margin: 0 auto;
+
+  padding: 20px 10px 100px 10px;
+  max-width: 900px;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
+
+const AllUX = props => {
   return (
-    <div
-      className={css`
-        background-color: ${props.bgColor};
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-      `}
-    >
+    <Wrapper bgColor={props.bgColor}>
       <div
         className={css`
           display: grid;
@@ -34,13 +51,7 @@ export default props => {
         {props.data.map(item => {
           return (
             <div key={item.node.id}>
-              <Link
-                to={item.node.fields.slug}
-                className={css`
-                  text-decoration: none;
-                  color: inherit;
-                `}
-              >
+              <StyledLink to={item.node.fields.slug}>
                 <Card
                   strengths={item.node.frontmatter.strengths}
                   level={item.node.frontmatter.level}
@@ -50,11 +61,12 @@ export default props => {
                     item.node.frontmatter.cover_image.childImageSharp.fluid.src
                   }
                 />
-              </Link>
+              </StyledLink>
             </div>
           );
         })}
       </div>
-    </div>
+    </Wrapper>
   );
 };
+export default AllUX;
