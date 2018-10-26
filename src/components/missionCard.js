@@ -26,11 +26,13 @@ class MissionCard extends Component {
               <ul className="mission-card__list  mission-card__tablet-list">
                 <li className={`mission-card__list--item`}>
                   {this.props.data.logo ? (
-                    <img
-                      style={{ height: "12px", marginRight: "10px" }}
-                      src={this.props.data.logo.childImageSharp.original.src}
-                      alt="company logo"
-                    />
+                    <div style={{ width: "80px", display: "inline-block" }}>
+                      <img
+                        style={{ height: "12px", marginRight: "10px" }}
+                        src={this.props.data.logo.childImageSharp.original.src}
+                        alt="company logo"
+                      />
+                    </div>
                   ) : null}
                   {this.props.data.name}
                 </li>
@@ -52,11 +54,11 @@ class MissionCard extends Component {
                   {this.props.data.date}
                 </li>
 
-                {!this.props.education ? (
+                {/* {!this.props.education ? (
                   <li className={`mission-card__list--item`}>
                     {this.props.data.role}
                   </li>
-                ) : null}
+                ) : null} */}
               </ul>
             </div>
           </ExpansionPanelSummary>
