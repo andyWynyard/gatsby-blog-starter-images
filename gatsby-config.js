@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        displayName: false
+        displayName: true
       }
     },
     `gatsby-remark-copy-linked-files`,
