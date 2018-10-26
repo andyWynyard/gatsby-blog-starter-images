@@ -26,7 +26,7 @@ class MissionCard extends Component {
               <ul className="mission-card__list  mission-card__tablet-list">
                 <li className={`mission-card__list--item`}>
                   {this.props.data.logo ? (
-                    <div style={{ width: "80px", display: "inline-block" }}>
+                    <div style={{ minWidth: "80px", display: "inline-block" }}>
                       <img
                         style={{ height: "12px", marginRight: "10px" }}
                         src={this.props.data.logo.childImageSharp.original.src}
@@ -41,7 +41,7 @@ class MissionCard extends Component {
               <ul className={`mission-card__list mission-card__desktop-list`}>
                 <li className={`mission-card__list--item`}>
                   {this.props.data.logo ? (
-                    <div style={{ width: "80px", display: "inline-block" }}>
+                    <div style={{ minWidth: "80px", display: "inline-block" }}>
                       <img
                         style={{ height: "12px", marginRight: "10px" }}
                         src={this.props.data.logo.childImageSharp.original.src}
