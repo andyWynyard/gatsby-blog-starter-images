@@ -8,6 +8,12 @@ module.exports = {
     malinContact: `mailto:malin.bryntesson@sigma.se?Subject=Jag%20vill%20höra%20mer%20om%20UX`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: true
+      }
+    },
     `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

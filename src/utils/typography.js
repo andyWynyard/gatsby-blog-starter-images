@@ -9,7 +9,7 @@ const typography = new Typography({
     }
   ],
 
-  baseFontSize: "15px",
+  // baseFontSize: "15px",
   headerFontFamily: ["Montserrat", "serif"],
   bodyFontFamily: ["Montserrat", "serif"]
 });

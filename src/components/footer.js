@@ -1,8 +1,54 @@
 import React from "react";
+import styled from "styled-components";
 
-import "./footer.css";
+const StyledFooter = styled.div`
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #333;
+  color: #fff;
+  .footer__content {
+    padding: 30px 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer__question {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .footer__question--two {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .footer__links-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .footer__links {
+    color: white;
+    text-decoration: none;
+  }
+  .footer__link {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+`;
+
 export default props => (
-  <div className="footer">
+  <StyledFooter>
     <div className="footer__content">
       <p className="footer__question">Want to get to know us better?</p>
       <p className="footer__question--two">
@@ -26,5 +72,5 @@ export default props => (
         </a>
       </p>
     </div>
-  </div>
+  </StyledFooter>
 );
